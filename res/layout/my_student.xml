@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgStudent"
+        android:layout_width="137dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/student" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtStudentClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class:" />
+
+        <TextView
+            android:id="@+id/txtStudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStudentClass"
+            android:text="Name:" />
+
+        <TextView
+            android:id="@+id/txtStudentBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStudentName"
+            android:text="Birthday:" />
+
+        <TextView
+            android:id="@+id/txtStudentGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStudentBirthday"
+            android:text="Gender:" />
+
+        <TextView
+            android:id="@+id/txtStudentAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStudentGender"
+            android:text="Address:" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tiêu đề lịch học -->
+    <TextView
+        android:id="@+id/txtScheduleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lịch học"
+        android:gravity="center"
+        android:background="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Nhãn cho Spinner chọn ngày -->
+    <TextView
+        android:id="@+id/txtDayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn ngày"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Spinner chọn ngày -->
+    <Spinner
+        android:id="@+id/spinnerViewMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_ds"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Danh sách lịch học -->
+    <ListView
+        android:id="@+id/listViewSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Thông báo không có lịch học -->
+    <TextView
+        android:id="@+id/txtNoSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Không có lịch học trong khoảng thời gian này"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+</LinearLayout>

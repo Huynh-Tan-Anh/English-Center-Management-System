@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+     <!-- Màu nền của EditText -->
+    <corners android:radius="16dp"/> <!-- Độ bo tròn các góc -->
+    <stroke android:width="2dp" android:paddingLeft="10dp"/> <!-- Đường viền của EditText -->
+</shape>

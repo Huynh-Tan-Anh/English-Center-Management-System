@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tiêu đề thêm tài liệu -->
+    <TextView
+        android:id="@+id/txtAddDocumentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm tài liệu mới"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#FFD700"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- EditText nhập tên tài liệu -->
+    <EditText
+        android:id="@+id/edtDocumentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên tài liệu"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_border"/>
+
+    <!-- Nút lưu tài liệu -->
+    <Button
+        android:id="@+id/btnSaveDocument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_ds"/>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnOpenStudent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_ds"
+        android:backgroundTint="#3399FF"
+        android:text="Thêm Sinh Viên"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnBackToMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:background="@drawable/button_ds"
+        android:layout_below="@+id/btnOpenStudent"
+        android:text="Quay lại " />
+
+    <ListView
+        android:id="@+id/lstStudent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/btnBackToMain"
+        android:layout_marginTop="10sp"
+         />
+
+</RelativeLayout>

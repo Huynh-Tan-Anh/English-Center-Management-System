@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/txtClassLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD700"
+        android:gravity="center"
+        android:text="Cập nhật lớp học"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:padding="10dp" />
+
+    <!-- Nút Quay lại -->
+    <Button
+        android:id="@+id/btnBackEditClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtClassLabel"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF6347"
+        android:text="Quay lại"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF" />
+
+    <!-- Bố cục nhập liệu -->
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBackEditClass"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+        <!-- Mã lớp -->
+        <TextView
+            android:id="@+id/txtCodeClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã lớp:"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edtEditClassCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mã lớp"
+            android:inputType="text"
+            android:padding="10dp"
+            android:background="@drawable/edittext_border"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+        <!-- Tên lớp -->
+        <TextView
+            android:id="@+id/txtClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên lớp:"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edtEditClassName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên lớp"
+            android:inputType="text"
+            android:padding="10dp"
+            android:background="@drawable/edittext_border"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+        <!-- Sỉ số -->
+        <TextView
+            android:id="@+id/txtClassNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sỉ số:"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edtEditClassNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập số lượng sinh viên"
+            android:inputType="number"
+            android:padding="10dp"
+            android:background="@drawable/edittext_border"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Khu vực các nút hành động -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/formLayout"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <!-- Nút Cập Nhật -->
+        <Button
+            android:id="@+id/btnSaveEditClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:padding="12dp"
+            android:background="@drawable/button_ds"
+            android:text="Cập nhật"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3399FF" />
+
+        <!-- Nút Xóa Trắng -->
+        <Button
+            android:id="@+id/btnClearEditClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/button_ds"
+            android:text="Xóa trắng"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF6347" />
+    </LinearLayout>
+
+</RelativeLayout>

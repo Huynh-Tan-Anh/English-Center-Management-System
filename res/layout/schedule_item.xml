@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/txtClassName"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Tên lớp"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="#FFE0E0E0"/>
+
+    <TextView
+        android:id="@+id/txtStudentCount"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:background="#FFE0E0E0"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Số sinh viên"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtDay"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Thứ"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="#FFE0E0E0"/>
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Giờ"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="#FFE0E0E0"/>
+</LinearLayout>

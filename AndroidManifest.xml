@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/student_setting"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/student_setting"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentManageSystem"
+        tools:targetApi="31">
+        <activity android:name=".ActionBarActivity"></activity>
+
+
+        <activity android:name=".InsertEditActivity"></activity>
+
+        <activity android:name=".Activity_class.ClassList"></activity>
+        <activity android:name=".Activity_class.InsertClassActivity"></activity>
+        <activity android:name=".Activity_class.EditClassActivity"></activity>
+
+        <activity android:name=".Activity_student.StudentListActivity"></activity>
+        <activity android:name=".Activity_student.InsertStudentActivity"></activity>
+        <activity android:name=".Activity_student.EditStudentActivity"></activity>
+
+        <activity android:name=".Adapter.MyAdapterClass"></activity>
+        <activity android:name=".Adapter.MyAdapterStudent"></activity>
+
+        <activity android:name=".model.Room"></activity>
+        <activity android:name=".model.Student"></activity>
+
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Notify"></activity>
+
+        <activity android:name=".Schedule_Activity.ScheduleClassActivity"></activity>
+        <activity android:name=".Schedule_Activity.ViewScheduleActivity"></activity>
+
+        <activity android:name=".Score_Activity.ViewScoresActivity"></activity>
+        <activity android:name=".Score_Activity.EnterScoreActivity"></activity>
+        <activity android:name=".Score_Activity.EditScoreActivity"></activity>
+
+        <activity android:name=".Schedule_Activity.EditScheduleActivity"></activity>
+
+        <activity android:name=".Document_Activity.DocumentManagementActivity" />
+        <activity android:name=".Document_Activity.AddDocumentActivity" />
+
+        <activity android:name=".Chat_Activity.ChatActivity" />
+
+
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+
+</manifest>
